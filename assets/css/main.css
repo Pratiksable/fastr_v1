@@ -1,16 +1,4 @@
-/**
-* Template Name: iLanding
-* Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
-* Updated: Nov 12 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Nunito",  sans-serif;
@@ -98,6 +86,81 @@ h6 {
   margin-bottom: 24px;
   font-weight: 600;
 }
+
+.swiper-slide h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  padding: 30px;
+  line-height: 1.4;
+}
+ .coming-soon-card {
+  opacity: 0.6;
+  pointer-events: none;
+  filter: grayscale(0.3);
+}
+
+.coming-soon-badge {
+  /* position: absolute; */
+  top: 10px;
+  right: 15px;
+  background: #ffc107;
+  color: #000;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} 
+.service-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+#whatsapp-button {
+  position: fixed;
+  right: 15px;
+  bottom: 70px; /* slightly above scroll-to-top */
+  width: 45px;
+  height: 45px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#whatsapp-button:hover {
+  background-color: #1ebd57;
+}
+
+.cta-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
 
 .php-email-form .sent-message {
   display: none;
