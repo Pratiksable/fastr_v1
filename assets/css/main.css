@@ -64,6 +64,30 @@ a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
 }
+.service-grid {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.service-icon:hover {
+  transform: scale(1.1);
+}
+
+.customers-badge {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #555;
+}
+
 
 h1,
 h2,
@@ -1003,6 +1027,11 @@ section,
 @media (max-width: 575px) {
   .hero .stat-item {
     padding: 1.5rem;
+  }
+}
+@media (max-width: 575px) {
+  .hero {
+    padding-top: 100px;
   }
 }
 
